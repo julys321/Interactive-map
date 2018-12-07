@@ -5,8 +5,9 @@ class Connection : public Node
 public:
 	bool leadsOutside = false;
 	std::string connectedWithId;
+	int connectedRoomDistance;
 	Connection();
-	Connection(bool leadsOutside, std::string connectedWithId);
+	Connection(bool leadsOutside, std::string connectedWithId, int connectedRoomDistance);
 	~Connection();
 };
 
