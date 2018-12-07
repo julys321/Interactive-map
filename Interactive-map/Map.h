@@ -7,6 +7,7 @@ public:
 	std::string name;
 	std::vector<Room> rooms;
 	Map();
+	Map(std::string name , std::vector<Room> rooms);
 	~Map();
 };
 
