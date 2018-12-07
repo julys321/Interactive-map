@@ -7,5 +7,7 @@ public:
 	int metreDistanceFromRoomCenter = 1;
 	Node();
 	~Node();
+private:
+	std::string ceateId();
 };
 
