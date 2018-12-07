@@ -1,5 +1,5 @@
 #include "Map.h"
-
+using namespace interactiveMap;
 
 
 Map::Map()

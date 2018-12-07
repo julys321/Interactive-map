@@ -1,7 +1,8 @@
 #pragma once
 #include <vector>
 #include "Room.h"
-class Map
+namespace interactiveMap { class Map; };
+class interactiveMap::Map
 {
 public:
 	std::string name;
