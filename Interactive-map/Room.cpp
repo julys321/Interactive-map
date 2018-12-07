@@ -2,6 +2,10 @@
 
 
 
+Room::Room()
+{
+}
+
 Room::Room(int floor)
 {
 	this->floor = floor;

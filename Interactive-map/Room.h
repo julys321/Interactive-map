@@ -9,6 +9,7 @@ public:
 	int floor;
 	std::vector<Connection> connections;
 	std::vector<Item> items;
+	Room();
 	Room(int floor);
 	Room(int floor, std::vector<Connection> connections, std::vector<Item> items);
 	~Room();
