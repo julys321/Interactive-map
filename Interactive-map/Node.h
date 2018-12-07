@@ -4,7 +4,7 @@ class Node
 {
 public:
 	std::string id;
-	int metreDistanceFromRoomCenter;
+	int metreDistanceFromRoomCenter = 1;
 	Node();
 	~Node();
 };
