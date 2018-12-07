@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Connection.h" />
     <ClInclude Include="EmptyClass.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Node.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Connection.cpp" />
     <ClCompile Include="EmptyClass.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Map.cpp" />
