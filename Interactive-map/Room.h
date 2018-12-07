@@ -6,9 +6,12 @@ class Room
 {
 public:
 	std::string id;
+	int floor;
 	std::vector<Connection> connections;
 	std::vector<Item> items;
-	Room();
+	Room(int floor);
 	~Room();
+private:
+	std::string createId();
 };
 
