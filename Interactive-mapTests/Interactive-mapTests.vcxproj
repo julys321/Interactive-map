@@ -50,6 +50,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="RoomTests.cpp" />
+    <ClCompile Include="ShortestPathTreeTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

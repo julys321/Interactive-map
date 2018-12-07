@@ -27,6 +27,7 @@
     <ClInclude Include="MapSaver.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Room.h" />
+    <ClInclude Include="ShortestPathTree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Connection.cpp" />
@@ -38,6 +39,7 @@
     <ClCompile Include="MapSaver.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Room.cpp" />
+    <ClCompile Include="ShortestPathTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="MockMap.txt" />
