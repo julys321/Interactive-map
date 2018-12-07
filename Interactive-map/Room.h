@@ -5,7 +5,6 @@
 class Room
 {
 public:
-	std::string id;
 	std::vector<Connection> connections;
 	std::vector<Item> items;
 	Room();
