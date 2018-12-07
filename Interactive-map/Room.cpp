@@ -8,6 +8,14 @@ Room::Room(int floor)
 	this->id = this->createId();
 }
 
+Room::Room(int floor, std::vector<Connection> connections, std::vector<Item> items)
+{
+	this->floor = floor;
+	this->id = this->createId();
+	this->connections = connections;
+	this->items = items;
+}
+
 
 Room::~Room()
 {
