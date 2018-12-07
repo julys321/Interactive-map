@@ -67,5 +67,8 @@
     <Text Include="MockMap.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="MockMapHumanReadable.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
