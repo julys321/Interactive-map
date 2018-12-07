@@ -16,6 +16,18 @@ std::vector<Item> MapLoader::readItems(std::ifstream & input)
 	return items;
 }
 
+Connection MapLoader::readConnection(std::ifstream & input)
+{
+	Connection connection;
+	int distance;
+	input.ignore(1);//ignore '{'
+	connection.connectedWithId = readRoomId(input);
+	input >> distance;
+	connection.connectedRoomDistance = distance;
+	input.ignore(3);//ignore ',},'
+	return connection;
+}
+
 std::vector<Connection> MapLoader::readConnections(std::ifstream & input)
 {
 	std::vector<Connection> connections;
@@ -25,8 +37,7 @@ std::vector<Connection> MapLoader::readConnections(std::ifstream & input)
 	input >> connectionCount;
 	input.ignore(1);//ignore ','
 	for (int i = 0; i < connectionCount; i++) {
-		Connection connection;
-		connection.connectedWithId = readRoomId(input);
+		Connection connection = readConnection(input);
 		connections.push_back(connection);
 	}
 	input.ignore(2);//ignore '},'

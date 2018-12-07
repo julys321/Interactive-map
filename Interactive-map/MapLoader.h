@@ -9,6 +9,7 @@ public:
 	~MapLoader();
 private:
 	static std::vector<Item> readItems(std::ifstream &input);
+	static Connection readConnection(std::ifstream &input);
 	static std::vector<Connection> readConnections(std::ifstream &input);
 	static int readRoomFloor(std::ifstream &input);
 	static std::string readRoomId(std::ifstream &input);
