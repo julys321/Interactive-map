@@ -2,6 +2,11 @@
 
 
 
+interactiveMap::Map MapLoader::loadMapFromFile()
+{
+	return interactiveMap::Map();
+}
+
 MapLoader::MapLoader()
 {
 }

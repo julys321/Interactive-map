@@ -3,7 +3,7 @@
 class MapLoader
 {
 public:
-	static interactiveMap::Map loadMapFromJson();
+	static interactiveMap::Map loadMapFromFile();
 	MapLoader();
 	~MapLoader();
 };
