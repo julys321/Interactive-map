@@ -9,6 +9,7 @@ public:
 	~MapSaver();
 private:
 	static void writeItems(std::ofstream &output, std::vector<Item> items);
+	static void writeConnection(std::ofstream &output, Connection connection);
 	static void writeConnections(std::ofstream &output, std::vector<Connection> connections);
 	static void writeRoom(std::ofstream &output, Room room);
 	static void writeRooms(std::ofstream &output, std::vector<Room> rooms);

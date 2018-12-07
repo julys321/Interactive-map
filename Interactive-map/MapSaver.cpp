@@ -11,11 +11,19 @@ void MapSaver::writeItems(std::ofstream & output, std::vector<Item> items)
 	output << "},";
 }
 
+void MapSaver::writeConnection(std::ofstream & output, Connection connection)
+{
+	output << '{';
+	writeString(output, connection.connectedWithId);
+	output << connection.metreDistanceFromRoomCenter << ',';
+	output << "},";
+}
+
 void MapSaver::writeConnections(std::ofstream & output, std::vector<Connection> connections)
 {
 	output << '{' << connections.size() << ',';
 	for (Connection connection : connections) {
-		writeString(output, connection.connectedWithId);
+		writeConnection(output, connection);
 	}
 	output << "},";
 }
