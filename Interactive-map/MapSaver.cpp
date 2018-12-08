@@ -15,8 +15,8 @@ void MapSaver::writeConnection(std::ofstream & output, Connection connection)
 {
 	output << '{';
 	writeString(output, connection.connectedWithId);
-	output << connection.metreDistanceFromRoomCenter << ',';
-	output << "},";
+	output << connection.connectedRoomDistance;
+	output << ",},";
 }
 
 void MapSaver::writeConnections(std::ofstream & output, std::vector<Connection> connections)
